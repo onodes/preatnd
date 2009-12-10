@@ -1,28 +1,36 @@
-%form{:method => "POST", :action => '/admin'}
-  %input{:type => "hidden", :name => "_method", :value => "PUT"}
-  %table
-    %tr
-      %td イベント名
-      %td 
-        %input{:type => "text", :name => "name"}
-    %tr
-      %td 管理者 
-      %td
-        %input{:type => "text", :name => "user"}          
-    %tr
-      %td 開催日
-      %td
-        %input{:type => "text", :name => "title"}
-    %tr
-      %td 内容
-      %td
-        %textarea{:name => "message", :cols => 60, :rows => 8}
-    %tr
-      %td PassWord
-      %td 
-        %input{:type => "password", :name => "pass"}
-    %tr
-      %td
-      %td
-        %input{:type => "submit"}
+%div{:id=> "main"}
+  %div{:id=> "main_title"}
+    %h2 イベント作成
+  %form{:id=> "new_event" :method=> "POST" :action=> "/admin"}
+    %dl
+      %dt タイトル：
+      %dd
+        %input{:id=> "event_title" :type=> "text"}
+      %dt サブタイトル：
+      %dd
+        %input{:id=> "event_subtitle" :type=> "text"}
+      %dt 内容：
+      %dd
+        %input{:id=> "event_description" :type=> "text"}
+      %dt 開催日時：
+      %dd
+        %input{:id=> "event_start_time" :type=> "text"}
+      %dt 定員：
+      %dd
+        %input{:id=> "event_limit" :type=> "text"}
+      %dt 会場：
+      %dd
+        %input{:id=> "event_place" :type=> "text"}
+      %dt 住所：
+      %dd
+        %input{:id=> "event_address" :type=> "text"}
+      %dt URL：
+      %dd
+        %input{:id=> "event_url" :type=> "text"}
+      %dt オプション：
+      %dd
+        %input{:id=> "event_option" :type=> "text"}
+    %div{:class=>"submit_button"}
+      %input{:type=> "submit"}
+
 
