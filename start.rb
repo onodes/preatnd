@@ -16,7 +16,13 @@ get '/' do
     @comments = Comments.order_by(:posted_date.desc)
       haml :index
 end
- 
+
+get '/admin' do
+  haml :admin
+end
+
+
+
 put '/comment' do
     Comments.create({
           :name => request[:name],
