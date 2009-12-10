@@ -1,36 +1,34 @@
 %div{:id=> "main"}
   %div{:id=> "main_title"}
     %h2 イベント作成
-  %form{:id=> "new_event" :method=> "POST" :action=> "/admin"}
+  %form{:id=> "new_event", :method=> "POST", :action=> "/admin"}
     %dl
       %dt タイトル：
       %dd
-        %input{:id=> "event_title" :type=> "text"}
+        %input{:id=> "event_title", :type=> "text"}
       %dt サブタイトル：
       %dd
-        %input{:id=> "event_subtitle" :type=> "text"}
+        %input{:id=> "event_subtitle", :type=> "text"}
       %dt 内容：
       %dd
-        %input{:id=> "event_description" :type=> "text"}
+        %input{:id=> "event_description", :type=> "text"}
       %dt 開催日時：
       %dd
-        %input{:id=> "event_start_time" :type=> "text"}
+        %input{:id=> "event_start_time", :type=> "text"}
       %dt 定員：
       %dd
-        %input{:id=> "event_limit" :type=> "text"}
+        %input{:id=> "event_limit", :type=> "text"}
       %dt 会場：
       %dd
-        %input{:id=> "event_place" :type=> "text"}
+        %input{:id=> "event_place", :type=> "text"}
       %dt 住所：
       %dd
-        %input{:id=> "event_address" :type=> "text"}
+        %input{:id=> "event_address", :type=> "text"}
       %dt URL：
       %dd
-        %input{:id=> "event_url" :type=> "text"}
+        %input{:id=> "event_url", :type=> "text"}
       %dt オプション：
       %dd
-        %input{:id=> "event_option" :type=> "text"}
+        %input{:id=> "event_option", :type=> "text"}
     %div{:class=>"submit_button"}
       %input{:type=> "submit"}
-
-
