@@ -3,6 +3,7 @@ require 'sequel'
 Sequel::Model.plugin(:schema)
 
 Sequel.connect("sqlite://events.db")
+
 class Events < Sequel::Model
   unless table_exists?
     set_schema do
