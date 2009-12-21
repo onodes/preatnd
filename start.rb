@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'model/comment.rb'
 require 'haml' 
-
+#produced by onodes
 helpers do
     include Rack::Utils; alias_method :h, :escape_html
 end
