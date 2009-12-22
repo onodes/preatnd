@@ -5,6 +5,7 @@ require 'haml'
 #produced by onodes
 #proxytest
 #secondtest
+#3rdtest
 helpers do
     include Rack::Utils; alias_method :h, :escape_html
 end
