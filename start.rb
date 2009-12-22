@@ -6,6 +6,7 @@ require 'haml'
 #proxytest
 #secondtest
 #3rdtest
+#k&a3
 helpers do
     include Rack::Utils; alias_method :h, :escape_html
 end
