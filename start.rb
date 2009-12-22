@@ -4,6 +4,7 @@ require 'model/comment.rb'
 require 'haml' 
 #produced by onodes
 #proxytest
+#secondtest
 helpers do
     include Rack::Utils; alias_method :h, :escape_html
 end
