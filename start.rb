@@ -7,6 +7,7 @@ require 'haml'
 #secondtest
 #3rdtest
 #k&a3
+#commit test
 helpers do
     include Rack::Utils; alias_method :h, :escape_html
 end

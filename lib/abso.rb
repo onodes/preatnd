@@ -24,12 +24,10 @@ class Absorb
 
 
   def gets
-  
+     
   end
 
-  def puts()
-    hash = YAML.load(@filename,'w')
-     
+  def puts
   end
 
   def puts_a
